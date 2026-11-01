@@ -1,4 +1,6 @@
 [build]
+  # Build from the repository root even if a site sets a base directory in the UI
+  base = "/"
   command = "npm ci --prefix frontend && npm run build --prefix frontend"
   publish = "frontend/dist"
 
